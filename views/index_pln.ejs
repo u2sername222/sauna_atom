@@ -1030,7 +1030,9 @@
                      <input type="hidden" name="type" value="hookah">
                      <div id="goods" class="js-successbox t-form__successbox t-text t-text_md" style="display:none">Trwa przetwarzanie zamówienia...</div>
                      <div class="t706__cartwin-products"></div>
-                     
+                     <div class="t706__cartwin-bottom">
+                        <div class="t706__cartwin-prodamount-wrap t-descr t-descr_sm"><span class="t706__cartwin-prodamount-label">Total: </span><span class="t706__cartwin-prodamount"></span></div>
+                     </div>
                      <div id="dannie" class="t706__form-upper-text t-descr t-descr_xs">Wprowadź swoje dane
                         <br>
                      </div>
@@ -1098,6 +1100,7 @@
                                  <div class="t-input-error"></div>
                               </div>
                            </div>
+                           <!--[if IE 8]><style>.t-checkbox__control .t-checkbox, .t-radio__control .t-radio { left: 0px; z-index: 1; opacity: 1;  } .t-checkbox__indicator, .t-radio__indicator { display: none;  } .t-img-select__control .t-img-select { position: static;  }</style><![endif]-->
                            <div class="t-form__errorbox-middle">
                               <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none">
                                  <div class="t-form__errorbox-text t-text t-text_md">
@@ -1109,7 +1112,7 @@
                                  </div>
                               </div>
                            </div>
-                           <input type="hidden" name="amount">
+                           <input type="hidden" name="amount" id="summas">
                            <input type="hidden" name="description" id="description">
                            <div class="t-form__submit">
                               <button type="submit" id="neworder" class="t-submit" style="color:#fff;background-color:#000;border-radius:30px;-moz-border-radius:30px;-webkit-border-radius:30px;opacity: 0.1;">Wymeldować się</button>
@@ -1173,6 +1176,7 @@
                </div>
             </div>
          </div>
+         <div class="t706__cartdata"></div>
       </div>
       <style></style>
    </div>
@@ -1192,7 +1196,29 @@
       });
       </script>
    </div>
-   
+   <script type="text/javascript">
+   $(document).ready(function() {
+      $("#orders386").submit(function(t) {
+         var e = this;
+         t.preventDefault(), $("#globals").hide(300), $(".t706__cartwin-products").css("display", "none"), $(".t706__cartwin-bottom").css("display", "none"), $("#dannie").css("display", "none"), setTimeout(function() {
+            $("#goods").css("display", "block")
+         }, 100), setTimeout(function() {
+            e.submit()
+         }, 2500)
+      }), $("#neworder").click(function() {
+         var t = jQuery(".t706__cartwin-totalamount").html();
+         jQuery("#summas").val(t.replace(/[^-0-9]/gim, "")), jQuery("#description").val("telefon: " + jQuery("#phoness").val() + "; Имя: " + jQuery("#namess").val() + "; Город: " + jQuery("#gorod").val() + "; Дата: " + jQuery("#dates").val() + "; Время: " + jQuery("#times").val()), jQuery("#phoness").val(jQuery("#phoness").val()), jQuery("#random").val(Math.round(9800 * Math.random()) + 54)
+      }), $("#goods22").click(function() {
+         var t = jQuery("#pole1").val(),
+            e = t.length,
+            n = jQuery("#pole2").val(),
+            o = n.length;
+         e >= 7 && o >= 5 ? ($("#globals2").hide(300), setTimeout(function() {
+            $("#goods2").css("display", "block")
+         }, 300)) : ($("#pole1").css("border", "1px solid red"), $("#pole2").css("border", "1px solid red"))
+      })
+   });
+   </script>
    <script type="text/javascript">
       setInterval(function () {
          if ($('#namess').val().length > 1 && $('#phoness').val().length > 1 && $('#dates').val().length > 1) {
