@@ -1095,6 +1095,7 @@
                                        <option value="05:00">05:00</option>
                                     </select>
                                  </div>
+                                 <div class="t-input-error"></div>
                               </div>
                            </div>
                            <div class="t-form__errorbox-middle">
@@ -1172,7 +1173,6 @@
                </div>
             </div>
          </div>
-         <div class="t706__cartdata"></div>
       </div>
       <style></style>
    </div>
@@ -1192,26 +1192,7 @@
       });
       </script>
    </div>
-   <script type="text/javascript">
-   $(document).ready(function() {
-      $("#orders386").submit(function(t) {
-         var e = this;
-         t.preventDefault(), $("#globals").hide(300), $(".t706__cartwin-products").css("display", "none"), $(".t706__cartwin-bottom").css("display", "none"), $("#dannie").css("display", "none"), setTimeout(function() {
-            $("#goods").css("display", "block")
-         }, 100), setTimeout(function() {
-            e.submit()
-         }, 2500)
-      }), $("#goods22").click(function() {
-         var t = jQuery("#pole1").val(),
-            e = t.length,
-            n = jQuery("#pole2").val(),
-            o = n.length;
-         e >= 7 && o >= 5 ? ($("#globals2").hide(300), setTimeout(function() {
-            $("#goods2").css("display", "block")
-         }, 300)) : ($("#pole1").css("border", "1px solid red"), $("#pole2").css("border", "1px solid red"))
-      })
-   });
-   </script>
+   
    <script type="text/javascript">
       setInterval(function () {
          if ($('#namess').val().length > 1 && $('#phoness').val().length > 1 && $('#dates').val().length > 1) {
